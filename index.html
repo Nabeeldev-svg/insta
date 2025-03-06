@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instagram Post Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <div class="container">
-<h1>Todo App</h1>
-    <div class="input">
-        <input type="text" placeholder="Enter your task" id="inputTask">
-        <button onclick="AddTask()">Add</button>
+    <div class="post-container">
+        <div class="post-header">
+            <img src="pics/pic1.jfif.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="header-info">
+                <span class="username">nabeel1122</span>
+                <span class="location">Pakistan</span>
+            </div>
+            <span class="options">⋮</span>
+        </div>
+        <div class="post-image">
+            <img src="pics/pic2.jfif.jpg" alt="Instagram Post">
+        </div>
+        <div class="post-actions">
+            <button id="like-button"><ion-icon name="heart-outline"></ion-icon></button>
+            <button id="comment-icon"><ion-icon name="chatbubble-outline"></ion-icon></button>
+            <button id="share-icon"><ion-icon name="paper-plane-outline"></ion-icon></button>
+        </div>
+        <div class="post-likes">
+            <span id="like-count">37 likes</span>
+        </div>
+        <div class="post-caption">
+            <span class="username">nabeel1122</span> Beautiful day at the beach! 
+        </div>
+        <div class="post-comments">
+            <ul id="comments-list"></ul>
+            <input type="text" id="comment-input" placeholder="Add a comment...">
+            <button id="comment-button">Post</button>
+        </div>
     </div>
-    <ul class="task-list"id="tasklist"></ul>
-    <div class="text"></div>
-</div>
 
 
-
-    <script src="work.js"></script>
+<script src="work.js"></script>
 </body>
 </html>
